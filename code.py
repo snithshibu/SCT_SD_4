@@ -30,7 +30,7 @@ def scrape_details(url):
 def save_csv(data, filename):
     with open(filename, mode='w', newline='', encoding='utf-8') as file: #creating a new file, change modes based on necessity
         writer = csv.writer(file)
-        writer.writerow(['Book Title', 'Price', 'Rating'])  #header of the csv file
+        writer.writerow(['Product Name', 'Price', 'Rating in stars'])  #header of the csv file
         writer.writerows(data)
         
 #Welcoming Statement
